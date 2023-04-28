@@ -56,6 +56,7 @@ public class Useraccess {
 		q.setParameter(1, phone);
 		q.setParameter(2, password);
 		List<User> user=q.getResultList();
+		System.out.println("hello ");
 		if(user.size()>0) {
 			User u=user.get(0);
 			return u;
